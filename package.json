@@ -1,0 +1,55 @@
+{
+	"name": "@inzero/ppoi-lite",
+	"version": "0.0.1",
+	"description": "Prettier plugin to organize imports",
+	"keywords": [
+		"ppoi",
+		"lite",
+		"prettier",
+		"plugin",
+		"organize",
+		"imports"
+	],
+	"homepage": "https://github.com/InZeroDev/ppoi-lite",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/InZeroDev/ppoi-lite"
+	},
+	"license": "MIT",
+	"author": "InZero",
+	"type": "module",
+	"main": "dist/main.js",
+	"files": [
+		"dist",
+		"package.json",
+		"README.md",
+		"CHANGELOG.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"format": "prettier --write .",
+		"prepublish": "pnpm run build"
+	},
+	"dependencies": {
+		"@inzero/ts-uf": "^0.3.3",
+		"@typescript/typescript6": "^6.0.2"
+	},
+	"devDependencies": {
+		"@inzero/ts-ut": "^0.5.0",
+		"@types/node": "^26.6.6",
+		"prettier": "^3.9.10",
+		"prettier-plugin-packagejson": "^3.1.0",
+		"tsup": "^9.0.0",
+		"typescript": "^7.0.2"
+	},
+	"packageManager": "pnpm@12.18.0",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "12.18.0",
+			"onFail": "download"
+		}
+	}
+}
